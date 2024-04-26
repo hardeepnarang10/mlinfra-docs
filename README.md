@@ -29,7 +29,7 @@ The team realized that the design itself was flawed, and they sought my help in 
 - Modification of the number of workers, or the API address requires manual intervention, along with process restarts.
 - Controller assumes availability of all nodes on start. Transgression may result in inefficient performance, timeouts, or crashes, and may require manual intervention.
 - One node/worker can only process one task at a time.
-- Controller WaitGroups require partitioning in case of multiple regions using a common resource pod, making it resource inefficient.
+- Controller WaitGroups require partitioning in case of multiple regions using a common resource pool, making it resource inefficient.
 - Each node from the pool must be bound to a Controller instance.
 - Does not support auto scaling resource pools.
 
